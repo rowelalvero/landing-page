@@ -7,14 +7,17 @@
 
     <style type="text/css">
         * {
-            
+            margin: 0%;
+            padding: 0%;
         }
         .wallpaper-one {
             background-color: #1F2937;
+            height: 100vh;
+            background-size: cover;
         }
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             font-family: Arial;
             font-size: 24px;
             color:#F9FAF8;
@@ -32,28 +35,40 @@
             font-size: 18px; 
             font-weight: lighter;
         }
+        .front-page-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 115px;
+        }
+
         .main-div{
             display: flex;
-            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
         }
-        .main-div-order-1 {
-            order: 0;
+        .front-texts-div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 480px;
+            flex:  0 1 auto;
         }
         .main-text {
             font-family: Arial;
             font-weight: bolder;
             font-size: 48px;
             color: #F9FAF8;
-
         }
+        
         .secondary-text {
             font-family: Arial;
             color: #E5E7EB;
             font-size: 18px;
-
         }
         .sign-up {
-            background-color: mediumblue;
+            background-color: #3882F6;
             border-radius: 8px;
             width: 90px;
             padding: 7px;
@@ -63,10 +78,122 @@
             font-weight: bold;
             color: #F9FAF8;
         }
+        .main-div .prophet {
+            width: 30%;
+            flex: 1 0 auto;
+        }
+        .information-header-text {
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 48px;
+            color: #1F2937;
+            text-align: center;
+        }
+        .second-page-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 115px;
+        }
+        .nanosuit-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        .placeholder {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .box {
+            border: 5px solid#3882F6;
+            border-radius: 20px;
+        }
+        .img-prophet {
+            width: 200px;
+        }
+        .wallpaper-three {
+            background-color: #E5E7EB;
+        }
+        .third-page-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 135px;
+        }
+        .qoute-text {
+            font-family: Arial;
+            color: #1F2937;
+            font-size: 36px;
+            font-style: italic;
+        }
+        .author-prophet {
+            font-family: Arial;
+            font-size: 18px;
+            color: #1F2937;
+            font-weight: bolder;
+            text-align: right;
+        }
+        .fourth-page-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 135px;
+        }
+        .card {
+            background-color: #3882F6;
+            border-radius: 8px;
+            width: 800px;
+            padding: 40px;
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: bold;
+            color: #F9FAF8;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .primary-text {
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 28px;
+            color: #F9FAF8;
+        }
+        .subtext {
+            font-family: Arial;
+            color: #E5E7EB;
+            font-size: 18px;
+        }
+        .secondary-sign-up {
+            border: 4px solid white;
+            border-radius: 8px;
+            width: 90px;
+            padding: 7px;
+            text-align: center;
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: bold;
+            color: #F9FAF8;
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+            font-size: 15px;
+            color:#F9FAF8;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            align-items: center;
+            background-color: #1F2937;
+        }
     </style>
 </head>
 <body>
     <div class="wallpaper-one">
+
         <div class="header">
             <div><img src="" alt="">Header logo</div>
             <div class="header-link">
@@ -76,43 +203,50 @@
             </div>
         </div>
 
-        <div class="main-div">
-            <div>
-                <div class="main-text">This website is awesome</div>
-                <div class="secondary-text">This website has some subtext that goas here under the main title. It's a smaller font and the color is lower contrast</div>
-                <div class="sign-up">Sign up</div>
-            </div>
-            <div>AAAAA<img src="" alt=""></div>
-        </div>
-    </div>
-
-    <div>
-        <div>
-            <div>Some random information</div>
-            <div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
-                <div><img src="" alt=""></div>
+        <div class="front-page-div">
+            <div class="main-div">
+                <div class="front-texts-div">
+                    <div class="main-text">This website is awesome</div>
+                    <div class="secondary-text">This website has some subtext that goas here under the main title. It's a smaller font and the color is lower contrast</div>
+                    <div class="sign-up">Sign up</div>
+                </div>
+                <img class="prophet" src="./images/prophet.jpg" alt="prophet">
             </div>
         </div>
+        
     </div>
 
-    <div>
-        <div>
-            <div>This is an inspiring qoute, or a testimonial from a customer. Maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-            <div>-Thor, God of Thunder</div>
+    <div class="second-page-div">
+        <div class="nanosuit-container">
+            <div class="information-header-text">The Nanosuit</div>
+            <div class="placeholder">
+                <div class="box"><img class="img-prophet" src="./images/1.png" alt=""></div>
+                <div class="box"><img class="img-prophet" src="./images/2.png" alt=""></div>
+                <div class="box"><img class="img-prophet" src="./images/3.png" alt=""></div>
+                <div class="box"><img class="img-prophet" src="./images/4.png" alt=""></div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <div>
-            <div> Call to action! It's time!</div>
-            <div>text keme keme</div>
-            <div>Sign up</div>
+    <div class="wallpaper-three">
+        <div class="third-page-div">
+            <div>
+                <div class="qoute-text">"We cannot fight new wars with old weapons. Let him who desires peace prepare for war."</div>
+                <div class="author-prophet">-Prophet, Crysis 3</div>
+            </div>
         </div>
     </div>
 
-    <footer>Copyright RowelJr Alvero</footer>
+    <div class="fourth-page-div">
+        <div class="card">
+            <div>
+                <div class="primary-text">Call to action! It's time!</div>
+                <div class="subtext">text keme keme</div>
+            </div>
+            <div class="secondary-sign-up">Sign up</div>
+        </div>
+    </div>
+
+    <footer class="footer">Copyright ©  RowelJr Alvero 2023</footer>
 </body>
 </html>
