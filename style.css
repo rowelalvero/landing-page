@@ -2,11 +2,7 @@
     margin: 0%;
     padding: 0%;
 }
-.wallpaper-one {
-    background-color: #1F2937;
-    height: 100vh;
-    background-size: cover;
-}
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -17,6 +13,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    background-color: #191A19;
 }
 .header-link{
     display: flex;
@@ -27,18 +24,27 @@
     font-size: 18px; 
     font-weight: lighter;
 }
-.front-page-div {
+.wallpaper-one {
+    background-color: #191A19;
+    height: 80vh;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 115px;
+    flex-wrap: wrap;
+    padding: 75px;
 }
-
 .main-div{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 50px;
+    background-color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 80px;
 }
 .front-texts-div {
     display: flex;
@@ -60,7 +66,7 @@
     font-size: 18px;
 }
 .sign-up {
-    background-color: #3882F6;
+    background-color: #3D0000;
     border-radius: 8px;
     width: 90px;
     padding: 7px;
@@ -72,13 +78,14 @@
 }
 .main-div .prophet {
     width: 30%;
+    border-radius: 40px;
     flex: 1 0 auto;
 }
 .information-header-text {
     font-family: Arial;
     font-weight: bolder;
     font-size: 48px;
-    color: #1F2937;
+    color: #EEEEEE;
     text-align: center;
 }
 .second-page-div {
@@ -86,12 +93,16 @@
     align-items: center;
     justify-content: center;
     padding: 115px;
+    background-color: #191A19;
 }
 .nanosuit-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    background-color: #000000;
+    border-radius: 80px;
+    padding: 50px;
 }
 .placeholder {
     display: flex;
@@ -100,24 +111,26 @@
     flex-wrap: wrap;
 }
 .box {
-    border: 5px solid#3882F6;
+    border: 2px solid #3D0000;
     border-radius: 20px;
+    background-color: #000000;
 }
 .img-prophet {
     width: 200px;
 }
 .wallpaper-three {
-    background-color: #E5E7EB;
+    background-color: #EEEEEE;
 }
 .third-page-div {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 135px;
+    background-color: #000000;
 }
 .qoute-text {
     font-family: Arial;
-    color: #1F2937;
+    color: #EEEEEE;
     font-size: 36px;
     font-style: italic;
 }
@@ -127,15 +140,17 @@
     color: #1F2937;
     font-weight: bolder;
     text-align: right;
+    color: #950101;
 }
 .fourth-page-div {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 75px;
+    background-color: #191A19;
 }
 .card {
-    background-color: #3882F6;
+    background-color: #000000;
     border-radius: 8px;
     width: 800px;
     padding: 40px;
@@ -160,7 +175,6 @@
     font-size: 18px;
 }
 .secondary-sign-up {
-    border: 4px solid white;
     border-radius: 8px;
     width: 90px;
     padding: 7px;
@@ -169,6 +183,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #F9FAF8;
+    background-color: #3D0000;
 }
 .footer {
     display: flex;
@@ -179,5 +194,5 @@
     padding-top: 45px;
     padding-bottom: 45px;
     align-items: center;
-    background-color: #1F2937;
+    background-color: #191A19;
 }    
